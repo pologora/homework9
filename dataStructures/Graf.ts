@@ -1,5 +1,5 @@
 export class Graph {
-  private adjacencyList: Map<string, Map<string, number>>;
+  adjacencyList: Map<string, Map<string, number>>;
 
   constructor() {
     this.adjacencyList = new Map();
