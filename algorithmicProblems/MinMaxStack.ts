@@ -24,7 +24,7 @@ export class MinMaxStack extends Stack<number> {
     super.push(value);
   }
 
-  setMinMaxOnPush(value: number) {
+  private setMinMaxOnPush(value: number) {
     const peekMax = this.max.peek();
     const peekMin = this.min.peek();
 
@@ -38,7 +38,7 @@ export class MinMaxStack extends Stack<number> {
     }
   }
 
-  setMinMaxOnPop(value: number) {
+  private setMinMaxOnPop(value: number) {
     const peekMax = this.max.peek();
     const peekMin = this.min.peek();
 

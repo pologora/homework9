@@ -167,5 +167,6 @@ export class BinaryTree<T> {
         queue.enqueue(node.right);
       }
     }
+    return result;
   }
 }
